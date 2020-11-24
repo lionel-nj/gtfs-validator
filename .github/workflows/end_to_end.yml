@@ -3,7 +3,6 @@ name: End to end
 on:
   push:
     branches: [ master, fix-false-positive-duplicate-translations ] #<-- replace transport-agency-name by the name of the agency/publisher
-    
 jobs:
   run-on-data:
     runs-on: ubuntu-latest
@@ -40,7 +39,6 @@ jobs:
           versionTag: ${{ steps.prep.outputs.versionTag }}
         with:
           arguments: shadowJar
-
       #- name: Validate dataset from -- ACRONYM #<-- uncomment this line, replace ACRONYM by the name of the agency/publisher acronym
       #  run: java -jar application/cli-app/build/libs/*.jar --url DATASET_PUBLIC_URL --input [[[ACRONYM]]].zip --extract pathToExtractedZipContent --output validationResultDirectory #<-- uncomment this line,
       - name: Validate dataset from -- FÖLI
