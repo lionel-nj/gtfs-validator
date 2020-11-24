@@ -2,7 +2,7 @@ name: End to end
 
 on:
   push:
-    branches: [ master ] #<-- replace transport-agency-name by the name of the agency/publisher
+    branches: [ master, fix-false-positive-duplicate-translations ] #<-- replace transport-agency-name by the name of the agency/publisher
   pull_request:
     branches:
       - fix-false-positive-duplicate-translations
