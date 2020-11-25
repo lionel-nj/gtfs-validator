@@ -2,7 +2,7 @@ name: End to end
 
 on:
   push:
-    branches: [ master, lionel-nj:patch-1 ] #<-- replace transport-agency-name by the name of the agency/publisher
+    branches: [ master, patch-1 ] #<-- replace transport-agency-name by the name of the agency/publisher
 jobs:
   run-on-data:
     runs-on: ubuntu-latest
